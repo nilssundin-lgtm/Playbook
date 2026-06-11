@@ -6,17 +6,17 @@
 <title>SPREEAI — The Playbook</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:wght@400;500;600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #141414;
-    --sidebar-bg: #1C1C1C;
-    --text: #F0EDE6;
-    --text-muted: #B0ABA4;
-    --accent: #B8A8BC;
-    --divider: #2E2E2E;
+    --bg: #0F0F0F;
+    --sidebar-bg: #171717;
+    --text: #F5F2EC;
+    --text-muted: #C0BAB2;
+    --accent: #C4B0C8;
+    --divider: #282828;
     --sidebar-width: 240px;
     --header-height: 60px;
   }
@@ -33,7 +33,9 @@
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-text-size-adjust: 100%;
   }
 
   /* ── MOBILE HEADER ── */
@@ -103,10 +105,11 @@
   .sidebar-wordmark {
     font-family: 'Cormorant Garant', serif;
     font-size: 22px;
-    font-weight: 400;
-    letter-spacing: 0.12em;
+    font-weight: 500;
+    letter-spacing: 0.14em;
     color: var(--text);
     text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
   }
 
   .sidebar-label {
@@ -124,10 +127,10 @@
 
   .nav-list li a {
     display: block;
-    padding: 10px 28px;
-    font-size: 12px;
+    padding: 11px 28px;
+    font-size: 14px;
     font-weight: 400;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     color: var(--text-muted);
     text-decoration: none;
     border-left: 2px solid transparent;
@@ -173,12 +176,13 @@
 
   .section-title {
     font-family: 'Cormorant Garant', serif;
-    font-size: 38px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 500;
     line-height: 1.15;
     color: var(--text);
     margin-bottom: 32px;
     letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
   }
 
   .section-intro {
@@ -205,11 +209,12 @@
 
   .value-name {
     font-family: 'Cormorant Garant', serif;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     color: var(--text);
     margin-bottom: 8px;
     letter-spacing: 0.02em;
+    -webkit-font-smoothing: antialiased;
   }
 
   .value-body {
@@ -230,10 +235,11 @@
 
   .principle-header {
     font-family: 'Cormorant Garant', serif;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     color: var(--text);
     margin-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
   }
 
   .principle-body {
@@ -245,7 +251,7 @@
   }
 
   .principle-kicker {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--accent);
     font-style: italic;
     margin-top: 10px;
@@ -288,13 +294,10 @@
 
   /* ── CLOSING TAG ── */
   .closer {
-    font-family: 'Cormorant Garant', serif;
-    font-size: 13px;
+    font-size: 16px;
     font-style: italic;
     color: var(--accent);
     margin-top: 28px;
-    padding-top: 20px;
-    border-top: 1px solid var(--divider);
   }
 
   /* ── MOBILE OVERLAY NAV ── */
@@ -313,7 +316,7 @@
 
   .mobile-nav-overlay .nav-list li a {
     padding: 14px 28px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* ── RESPONSIVE ── */
@@ -363,7 +366,6 @@
 <main class="main" id="main">
 
   <section class="section" id="what-we-believe" data-label="What We Believe">
-    <p class="section-eyebrow">Foundation</p>
     <h1 class="section-title">What we believe.</h1>
     <p class="section-intro">SPREEAI is building something that does not yet fully exist. That requires a team that moves with clarity, speed, and a shared sense of what matters. Our values define the posture we bring to that work: not just what we do, but how we think.</p>
     <div class="values-grid">
@@ -388,7 +390,6 @@
   </section>
 
   <section class="section" id="great-at-spreeai" data-label="Great at SPREEAI">
-    <p class="section-eyebrow">People</p>
     <h2 class="section-title">Great at SPREEAI.</h2>
     <p class="section-intro">We are a small team operating at an outsized level. Everyone can own an outcome and a standard, without waiting to be managed. You bring the problem and the path forward. You pull in the right people early. You do not wait for someone to notice the gap. You close it.</p>
     <div class="values-grid">
@@ -421,7 +422,6 @@
   </section>
 
   <section class="section" id="communication" data-label="Communication">
-    <p class="section-eyebrow">Operations</p>
     <h2 class="section-title">Communication.</h2>
     <p class="section-intro">Good communication is not about volume. It is about precision. We say what needs to be said, to the right person, through the right channel, with enough context to act on it. Everything else is noise.</p>
     <div class="values-grid">
@@ -472,7 +472,6 @@
   </section>
 
   <section class="section" id="meetings" data-label="Meetings">
-    <p class="section-eyebrow">Operations</p>
     <h2 class="section-title">Meetings.</h2>
     <p class="section-intro">A meeting that could have been a Slack message is a tax on everyone in the room. We meet when it moves something forward. Before you schedule, ask: can this be a doc? Can it be a message? If yes, do that instead.</p>
     <div class="values-grid">
@@ -497,7 +496,6 @@
   </section>
 
   <section class="section" id="feedback" data-label="Feedback">
-    <p class="section-eyebrow">Culture</p>
     <h2 class="section-title">Feedback.</h2>
     <p class="section-intro">Feedback is not an annual event you brace for. It is a steady habit: small, frequent, and low-drama. We give it often, we give it with respect, and we make it specific enough to act on. In person or on a call for anything developmental or sensitive. Written for reinforcing patterns or following up. When in doubt, default to live.</p>
     <div class="values-grid">
@@ -528,7 +526,6 @@
   </section>
 
   <section class="section" id="handling-tension" data-label="Handling Tension">
-    <p class="section-eyebrow">Culture</p>
     <h2 class="section-title">Handling tension.</h2>
     <p class="section-intro">Tension is not a warning sign. It is proof that something matters. Every team building something real will feel friction. What defines us is not whether tension exists. It is how we show up when it does.</p>
     <div class="values-grid">
@@ -556,7 +553,6 @@
   </section>
 
   <section class="section" id="how-we-make-decisions" data-label="How We Make Decisions">
-    <p class="section-eyebrow">Operations</p>
     <h2 class="section-title">How we make decisions.</h2>
     <p class="section-intro">Good decisions come from knowing why we are deciding, who owns the call, and where the truth is written down. Not every decision gets equal weight. Work is either above the line, moving us toward a client or revenue, or below it. When something moves above the line, something else moves below it. Track both. The decisions we defer are as important as the ones we make.</p>
     <div class="values-grid">
@@ -580,7 +576,6 @@
   </section>
 
   <section class="section" id="roadmaps-and-priorities" data-label="Roadmaps & Priorities">
-    <p class="section-eyebrow">Execution</p>
     <h2 class="section-title">Roadmaps and priorities.</h2>
     <p class="section-intro">We do not just ship. We ship toward something. This section defines how we organize our work, how we move it forward, and what we expect from every function in making that happen.</p>
     <div class="values-grid">
